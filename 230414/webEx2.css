@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body{
-    /* background-image: url(./wood.jpeg);
+    background-image: url(./wood.jpeg);
     background-size: cover;
-    background-position: center; */
+    background-position: center;
 }
 
 .container{
