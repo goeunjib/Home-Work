@@ -314,6 +314,19 @@ article > h2 + p {
   background-color: #ddd;
   aspect-ratio: 3 / 1;
 }
+.location .location-map address {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  background-color: #5a7481a1;
+  color: white;
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  text-align: left;
+}
+
 /* https://apis.map.kakao.com/web/guide/ */
 
 /******* contact *******/

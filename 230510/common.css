@@ -27,6 +27,7 @@ a {
   color: white;
   font-size: var(--fontSize14);
   display: inline-block;
+  margin: 20px;
 }
 .more-btn:hover {
   border-radius: 20px;
