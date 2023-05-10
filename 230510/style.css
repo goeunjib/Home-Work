@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/* 변수선언 */
+@import url(./veriable.css);
+/* common */
+@import url(./common.css);
+
+/******* header *******/
+header {
+  position: fixed;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  background-color: #33333396;
+  color: white;
+  z-index: -9999px;
+}
+header .header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  /* min-width: 1100px; */
+  width: 96%;
+  height: 98px;
+  margin: 0 auto;
+}
+header .header-wrapper h1 {
+  background: url(./img/logo_main.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 204px;
+  height: 100%;
+}
+header .header-wrapper .global-nav {
+  /* background-color: orange; */
+  font-weight: 600;
+  font-size: var(--fontSize18);
+  width: 60%;
+  /* flex: 0 0 60%; */
+}
+header .header-wrapper .global-nav li {
+  width: 20%;
+}
+header .header-wrapper .global-nav li:hover {
+  color: orange;
+}
+header .header-wrapper .global-utiil {
+  text-transform: uppercase;
+  font-size: var(--fontSize14);
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.5vw; */
+}
+header .header-wrapper .global-utiil li a {
+  display: block;
+  /* margin: 0.5vw; */
+}
+header .header-wrapper .global-utiil li:first-child a {
+  padding: 8px 16px 8px 40px;
+  border-radius: 20px;
+  background: orange url(./img/boat.png) no-repeat 11% 50% / 15%;
+}
+header .header-wrapper .global-utiil li:nth-child(2) a {
+  width: 80px;
+}
+header .header-wrapper .global-utiil li:nth-child(3) a {
+  width: 30px;
+}
+
+/******* content *******/
+/******* main-video *******/
+.main-video {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: url(./img/main_diag1.png) no-repeat 2% 0,
+    url(./img/main_diag3.png) no-repeat 0 45%,
+    url(./img/main_diag2.png) no-repeat 0 10%,
+    url(./img/main_diag4.png) no-repeat 0 100%,
+    url(./img/main_diag5.png) no-repeat 0 100%,
+    url(./img/main_diag6.png) no-repeat 100% 100%,
+    url(./img/main_diag7.png) no-repeat 100% 100%, url(./img/main_bg_check.png);
+  position: relative;
+}
+.main-video .youtube {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+.main-video .main-video-text {
+  color: white;
+  position: absolute;
+  left: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: italic;
+}
+.main-video .main-video-text h2 {
+  font-size: 4.25rem; /*68px*/
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 1px 1px #000000;
+  line-height: 1.2;
+}
+.main-video .main-video-text h2 span {
+  display: block;
+  font-size: 3.75rem; /*60px*/
+  font-weight: 300;
+  text-indent: 5px;
+}
+.main-video .main-video-text p {
+  width: 30vw;
+  line-height: 1.6;
+  margin: 20px 0 0 40px;
+}
+.main-video .main-widget {
+  position: absolute;
+  right: 1.563vw;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: var(--fontSize13);
+}
+.main-video .main-widget li {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.main-video .main-widget li a {
+  display: block;
+  background: no-repeat 50% 25%;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 17px; */
+  padding-top: 50px;
+  margin: 10px 0;
+}
+.main-video .main-widget li:nth-child(1) a {
+  background-image: url(./img/main_reserve_icon1_2108.png);
+  background-position: 50% 20%;
+}
+.main-video .main-widget li:nth-child(2) a {
+  background-image: url(./img/main_reserve_icon2_2108.png);
+}
+.main-video .main-widget li:hover {
+  background-image: linear-gradient(45deg, rgb(97, 97, 97), rgb(255, 219, 151));
+}
+
+/******* article 공통 *******/
+article > h2 {
+  font-size: var(--fontSizeTiitle);
+  font-weight: 600;
+}
+article > h2::before {
+  content: "/";
+  display: block;
+  color: orange;
+  font-size: 2rem;
+  margin: 110px 0 30px;
+}
+article > h2 + p {
+  width: 40%;
+  margin: 25px auto;
+  line-height: 1.6;
+}
+
+/******* glance *******/
+.glance .glance-list {
+  justify-content: center;
+  margin: 70px auto;
+  max-width: 1600px;
+  min-width: 1520px;
+}
+.glance .glance-list li {
+  border-right: #ddd solid 1px;
+  width: 20%;
+  padding: 80px 0 10px;
+  background: no-repeat 50% 10%;
+}
+.glance .glance-list li:nth-child(1) {
+  background-image: url(./img/icon_mg_calendar.png);
+}
+.glance .glance-list li:nth-child(2) {
+  background-image: url(./img/icon_mg_user.png);
+}
+.glance .glance-list li:nth-child(3) {
+  background-image: url(./img/icon_mg_clock.png);
+}
+.glance .glance-list li:nth-child(4) {
+  background-image: url(./img/icon_mg_ship.png);
+}
+.glance .glance-list li:last-child {
+  border: none;
+}
+.glance .glance-list li h3 {
+  font-weight: 300;
+}
+.glance .glance-list li h3::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #333;
+  margin: 10px auto;
+}
+.glance .glance-list li h3 strong {
+  font-size: var(--fontSizeCount);
+}
+.glance .glance-list li h4 {
+  color: rgb(84, 105, 175);
+  font-size: var(--fontSize20);
+  font-weight: 400;
+}
+.glance .glance-list li p {
+  font-weight: 300;
+}
+/******* business *******/
+.business .block-line {
+  display: block;
+}
+.business .business-wrapper {
+  position: relative;
+  color: #464646;
+}
+.business .business-wrapper .business-text {
+  background-color: rgb(241, 241, 241);
+  width: 50%;
+  position: relative;
+}
+.business .business-wrapper .business-text h3 {
+  font-size: 2rem;
+  color: #333;
+}
+.business .business-wrapper .business-text p {
+  font-size: var(--fontSize13);
+  color: #333;
+  width: 60%;
+  margin: 20px auto;
+}
+.business .business-wrapper .business-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgb(241, 241, 241);
+  width: 60px;
+  height: 100%;
+}
+.business .business-wrapper .business-text .business-menu {
+  margin: 40px 0;
+}
+.business .business-wrapper .business-text .business-menu li {
+  margin: 0 auto;
+}
+.business .business-wrapper .business-text .business-menu a {
+  margin: 10px;
+  position: relative;
+}
+.business .business-wrapper .business-text .business-menu a.active {
+  color: orange;
+}
+.business .business-wrapper .business-text .business-menu a.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.business .business-wrapper .business-text .business-img-list {
+  justify-content: center;
+}
+.business .business-wrapper .business-text .business-img-list li {
+  margin: 4vw 15px 0;
+}
+.business .business-wrapper .business-img {
+  width: 50%;
+  position: relative;
+  top: 40px;
+}
+.business .business-wrapper .business-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 30%;
+}
+.business .more-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+/******* location *******/
+.location {
+  background: url(./img/bg_worldmap.png) no-repeat 50% 0;
+}
+.location .location-list {
+  justify-content: center;
+}
+.location .location-list a {
+  display: block;
+  margin: 30px 10px;
+  font-weight: bold;
+  font-size: var(--fontSize18);
+}
+.location .location-list a.on {
+  color: orange;
+}
+.location .location-map {
+  width: 100%;
+  background-color: #ddd;
+  aspect-ratio: 3 / 1;
+}
+/* https://apis.map.kakao.com/web/guide/ */
+
+/******* contact *******/
+
+/******* footer *******/
