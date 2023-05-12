@@ -32,3 +32,6 @@ a {
 .more-btn:hover {
   border-radius: 20px;
 }
+.block-line {
+  display: block;
+}

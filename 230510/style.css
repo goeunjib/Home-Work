@@ -216,9 +216,6 @@ article > h2 + p {
   font-weight: 300;
 }
 /******* business *******/
-.business .block-line {
-  display: block;
-}
 .business .business-wrapper {
   position: relative;
   color: #464646;
@@ -330,5 +327,183 @@ article > h2 + p {
 /* https://apis.map.kakao.com/web/guide/ */
 
 /******* contact *******/
+.contact .contact-wrapper {
+  max-width: 1800px;
+  justify-content: center;
+  gap: 2.5vw;
+}
+.contact .contact-wrapper .press {
+  transition: 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(./img/1.png) no-repeat 50% / cover;
+  color: white;
+  flex: 2;
+}
+.contact .contact-wrapper .press:hover {
+  transition: 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(./img/1.png) no-repeat 50% / cover;
+}
+.contact .contact-wrapper .press h3 {
+  background-color: orange;
+  color: white;
+  font-size: var(--fontSize18);
+  width: 130px;
+  padding: 10px;
+}
+.contact .contact-wrapper .press h4 {
+  font-size: var(--fontSizeTiitle);
+  overflow: hidden;
+  /*한줄 말 줄임
+  text-overflow: ellipsis; 말줄임 기호
+  white-space: nowrap; 자동 줄바꿈 금지*/
+  /*여러말 줄임*/
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-line-clamp: 2; /*여러줄 텍스트 자르기*/
+  -webkit-box-orient: vertical;
+  margin: 30px;
+}
+/* 
+-webkit- 벤더 vondor : 정식버전으로 출시 되기 전 개발자들이 사용할 수 있게 만들어 놓은 약속어
+-ms-, -o-, -moz-
+ */
+.contact .contact-wrapper .press p {
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+.contact .contact-wrapper .ghost-btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  transition: 0.3s;
+  display: inline-block;
+}
+.contact .contact-wrapper .ghost-btn:hover {
+  border-radius: 30px;
+}
+.contact .contact-wrapper .notice {
+  flex: 2;
+  text-align: left;
+  position: relative;
+}
+.contact .contact-wrapper :is(.notice, .recruit) h3 {
+  font-size: var(--fontSize38);
+}
+.contact .contact-wrapper .notice .ghost-btn {
+  border-color: #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.contact .contact-wrapper .notice .notice-list {
+  margin: 1.5vw 0;
+}
+.contact .contact-wrapper .notice .notice-list li {
+  border-bottom: 1px solid #333;
+  padding: 16px 10px;
+  list-style: hyphen inside;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style */
+@counter-style emoji {
+  system: cyclic; /*같은 값 반복*/
+  symbols: "👾";
+  suffix: " "; /*머릿말 기호 다음 처리 방식. 기본값 ','*/
+}
+@counter-style hyphen {
+  system: cyclic;
+  symbols: "- ";
+  suffix: " ";
+}
+.contact .contact-wrapper .notice .notice-list li a {
+  margin-left: 4px;
+  /* 한 줄일때 말 줄임 */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* 정해진 범위가 있어야 적용 */
+  display: inline-block;
+  width: 60%;
+}
+.contact .contact-wrapper .notice .notice-list li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.contact .contact-wrapper .notice .notice-list li .date {
+  font-size: var(--fontSize15);
+  color: #bdbdbd;
+  float: right;
+}
+.contact .contact-wrapper .notice .notice-list li .date::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e8b5";
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+.contact .contact-wrapper .recruit {
+  flex: 1;
+  background: url(./img/bg_main_recruit.png) no-repeat 50% / cover;
+  text-align: left;
+  padding: 16px;
+  position: relative;
+}
+.contact .contact-wrapper .recruit h3 {
+  color: orange;
+}
+.contact .contact-wrapper .recruit .more-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /******* footer *******/
+footer {
+  background-color: #4b4b4b;
+  color: white;
+  margin-top: 5.8vw;
+}
+footer .footer-banner {
+  background-color: #ececec;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0;
+}
+footer .footer-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1vw;
+  font-size: var(--fontSize14);
+}
+footer .footer-wrapper .footer-top {
+  justify-content: space-between;
+}
+footer .footer-wrapper .footer-top h2 {
+  background: url(./img/ft_logo.png) no-repeat 50% / contain;
+  text-indent: -9999px;
+  width: 330px;
+  height: 50px;
+}
+footer .footer-wrapper .footer-top .footer-info {
+  gap: 20px;
+}
+footer .footer-wrapper .footer-bottom {
+  margin: 20px 0 50px;
+  justify-content: space-between;
+}
+footer .footer-wrapper .footer-bottom address {
+  text-align: left;
+  font-style: normal;
+}
+footer .footer-wrapper .footer-bottom address .copyright {
+  font-size: var(--fontSize14);
+  column-count: #555555;
+  margin-top: 20px;
+}
+footer .footer-wrapper .footer-bottom select {
+  background-color: #333;
+  align-self: flex-start;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  color: inherit;
+  text-align: left;
+}
