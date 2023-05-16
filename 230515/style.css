@@ -42,7 +42,7 @@ header .headerBar .menu {
 header .headerBar .menu li {
   min-height: 62px;
   padding: 0 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 header .headerBar .menu li a {
   font-size: var(--fotn-size-14);
@@ -222,9 +222,9 @@ header .nowStarting ul li a {
   position: absolute;
   right: 0;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.search .search-box .numberSearch p:hover{
+.search .search-box .numberSearch p:hover {
   background-color: #9e2428;
 }
 .search .search-box a {
@@ -240,7 +240,7 @@ header .nowStarting ul li a {
   height: 160px;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
-  margin-top: 8 px;
+  margin-top: 8px;
   align-items: center;
   position: absolute;
   right: 68px;
@@ -255,9 +255,9 @@ header .nowStarting ul li a {
   font-size: var(--font-size-15);
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
-.search .search-box .searchIcon figcaption:hover{
+.search .search-box .searchIcon figcaption:hover {
   color: #000;
 }
 .search .search-box .searchIcon img {
@@ -291,14 +291,12 @@ header .nowStarting ul li a {
   font-size: var(--font-size-20);
   color: white;
   cursor: pointer;
-  box-shadow:
-  3px 2.5px 4.4px rgba(0, 0, 0, 0.073),
-  8.4px 7px 12.1px rgba(0, 0, 0, 0.086),
-  20.2px 16.9px 29.2px rgba(0, 0, 0, 0.098),
-  67px 56px 97px rgba(0, 0, 0, 0.12);
-  
+  box-shadow: 3px 2.5px 4.4px rgba(0, 0, 0, 0.073),
+    8.4px 7px 12.1px rgba(0, 0, 0, 0.086),
+    20.2px 16.9px 29.2px rgba(0, 0, 0, 0.098),
+    67px 56px 97px rgba(0, 0, 0, 0.12);
 }
-.delivery .bar .yellow:hover{
+.delivery .bar .yellow:hover {
   background-color: #f8ac09;
 }
 .delivery .bar .white {
@@ -310,14 +308,13 @@ header .nowStarting ul li a {
   font-size: var(--font-size-20);
   color: white;
   cursor: pointer;
-  box-shadow:
-  3px 2.5px 4.4px rgba(0, 0, 0, 0.073),
-  8.4px 7px 12.1px rgba(0, 0, 0, 0.086),
-  20.2px 16.9px 29.2px rgba(0, 0, 0, 0.098),
-  67px 56px 97px rgba(0, 0, 0, 0.12);
-  transition: .3s;
+  box-shadow: 3px 2.5px 4.4px rgba(0, 0, 0, 0.073),
+    8.4px 7px 12.1px rgba(0, 0, 0, 0.086),
+    20.2px 16.9px 29.2px rgba(0, 0, 0, 0.098),
+    67px 56px 97px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
 }
-.delivery .bar .white:hover{
+.delivery .bar .white:hover {
   background-color: #3d3d3d;
 }
 .delivery .more {
@@ -338,7 +335,7 @@ header .nowStarting ul li a {
   font-weight: bold;
 }
 .delivery .more .delivery-box1 .online li {
-  margin: 4.5;
+  margin: 4.5px;
   color: rgba(0, 0, 0, 0.65);
 }
 .delivery .more .delivery-box1 .get {
@@ -351,7 +348,7 @@ header .nowStarting ul li a {
   font-weight: bold;
 }
 .delivery .more .delivery-box1 .get li {
-  margin: 4.5;
+  margin: 4.5px;
   color: rgba(0, 0, 0, 0.65);
 }
 .delivery .more .delivery-box3 h5 {
@@ -421,9 +418,9 @@ header .nowStarting ul li a {
   padding-left: 30px;
   color: #656565;
   font-size: var(--font-size-20);
-  transition: .3s;
+  transition: 0.3s;
 }
-.solution p a:hover{
+.solution p a:hover {
   text-decoration: underline;
 }
 .solution .solution-box1 {
@@ -498,16 +495,13 @@ header .nowStarting ul li a {
   border-radius: 10px;
   padding: 34px 0 0 28px;
 }
-.customer .customer-box .customer-box-white{
-  transition: .3s;
+.customer .customer-box .customer-box-white {
+  transition: 0.3s;
 }
-.customer .customer-box .customer-box-white:hover{
-  box-shadow:
-  1.7px 1.3px 4.4px rgba(0, 0, 0, 0.059),
-  4.6px 3.6px 12.1px rgba(0, 0, 0, 0.057),
-  11.2px 8.7px 29.2px rgba(0, 0, 0, 0.064),
-  37px 29px 97px rgba(0, 0, 0, 0.16)
-;
+.customer .customer-box .customer-box-white:hover {
+  box-shadow: 1.7px 1.3px 4.4px rgba(0, 0, 0, 0.059),
+    4.6px 3.6px 12.1px rgba(0, 0, 0, 0.057),
+    11.2px 8.7px 29.2px rgba(0, 0, 0, 0.064), 37px 29px 97px rgba(0, 0, 0, 0.16);
 }
 .customer .customer-box .customer-box-white h5 {
   color: rgba(0, 0, 0, 0.65);
@@ -666,9 +660,9 @@ header .nowStarting ul li a {
   display: block;
   margin: 0 auto 40px;
   padding: 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.history .a a:hover{
+.history .a a:hover {
   color: var(--point-color);
 }
 .history .a a:nth-child(1) {
@@ -750,9 +744,9 @@ header .nowStarting ul li a {
   text-align: center;
   margin-bottom: 197px;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
-.feedback .feedback-part .end-bar:hover{
+.feedback .feedback-part .end-bar:hover {
   background-color: #f8ac09;
 }
 
@@ -799,9 +793,9 @@ header .nowStarting ul li a {
   background-size: 90%;
   background-position: 50% 50%;
   opacity: 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
-.Integrations .surportLogo .iaf:hover{
+.Integrations .surportLogo .iaf:hover {
   width: 177px;
   height: 134px;
   background-image: url(./img/logo1.jpg);
@@ -818,7 +812,7 @@ header .nowStarting ul li a {
   background-size: 70%;
   background-position: 50% 50%;
   opacity: 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
 .Integrations .surportLogo .woo:hover {
   width: 177px;
@@ -837,7 +831,7 @@ header .nowStarting ul li a {
   background-size: 65%;
   background-position: 50% 50%;
   opacity: 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
 .Integrations .surportLogo .s:hover {
   width: 177px;
@@ -856,7 +850,7 @@ header .nowStarting ul li a {
   background-size: 60%;
   background-position: 50% 50%;
   opacity: 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
 .Integrations .surportLogo .aa:hover {
   width: 177px;
@@ -875,7 +869,7 @@ header .nowStarting ul li a {
   background-size: 75%;
   background-position: 50% 50%;
   opacity: 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
 .Integrations .surportLogo .shop:hover {
   width: 177px;
@@ -917,7 +911,7 @@ footer .cookie .SNSicon {
   width: 165px;
   justify-content: space-between;
 }
-footer .cookie .SNSicon img{
+footer .cookie .SNSicon img {
   width: 15%;
   height: 50%;
 }
@@ -927,9 +921,9 @@ footer .up {
   bottom: 10px;
   right: 10px;
   opacity: 60%;
-  transition: .2s;
+  transition: 0.2s;
 }
-footer .up:hover{
+footer .up:hover {
   opacity: 100%;
 }
 
