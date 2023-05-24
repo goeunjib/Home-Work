@@ -8,7 +8,7 @@ body {
 }
 /********* header *********/
 header {
-  background: url(./img/tittle.jpg) no-repeat 50% / contain;
+  background: url(./img/header.jpg) no-repeat 50% / contain;
   background-size: 100%;
   min-height: 700px;
   position: relative;
@@ -59,6 +59,7 @@ header .headerBar .login {
 header .headerBar .login li {
   min-height: 62px;
   padding: 0 10px;
+  transition: 0.3s;
 }
 header .headerBar .login li a {
   font-size: var(--fotn-size-14);
@@ -67,31 +68,31 @@ header .headerBar .login li a {
 header .headerBar .login li:hover {
   background-color: var(--main-color);
 }
-header .imgVector1 {
+header .arrow1 {
   position: absolute;
   top: 50%;
 }
-header .imgVector1 img {
+header .arrow1 img {
   min-width: 4%;
   max-width: 7%;
   opacity: 70%;
 }
-header .imgVector1 img:hover {
+header .arrow1 img:hover {
   opacity: 100%;
   cursor: pointer;
 }
-header .imgVector2 {
+header .arrow2 {
   transform: rotate(180deg);
   position: absolute;
   top: 50%;
   right: 0;
 }
-header .imgVector2 img {
+header .arrow2 img {
   min-width: 4%;
   max-width: 7%;
   opacity: 70%;
 }
-header .imgVector2 img:hover {
+header .arrow2 img:hover {
   opacity: 100%;
   cursor: pointer;
 }
@@ -137,6 +138,7 @@ header .nowStarting ul li:nth-child(2) {
   height: 49px;
   line-height: 49px;
   text-align: center;
+  transition: 0.3s;
 }
 header .nowStarting ul li:nth-child(2):hover {
   background-color: rgba(255, 204, 0, 0.5);
@@ -148,6 +150,7 @@ header .nowStarting ul li:nth-child(3) {
   line-height: 49px;
   text-align: center;
   border-radius: 0 5px 5px 0;
+  transition: 0.3s;
 }
 header .nowStarting ul li:nth-child(3):hover {
   background-color: rgba(255, 204, 0, 0.5);
