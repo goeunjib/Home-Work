@@ -26,6 +26,7 @@ header img:first-child {
 header img:last-child {
   height: 30%;
 }
+
 main {
   width: 100%;
   background-color: rgb(255, 225, 229);
@@ -36,11 +37,15 @@ main p {
   font-size: var(--font-size-17);
   text-align: center;
   padding-top: 100px;
+  letter-spacing: 8px;
+  font-weight: 300;
 }
 main .fontFamily {
   font-size: var(--font-size-52);
   margin-top: 10px;
   padding: 0;
+  letter-spacing: 5px;
+  font-weight: 200;
 }
 main img {
   width: 100%;
@@ -54,7 +59,14 @@ main .flex {
 }
 main .flex p {
   padding: 0;
-  margin: 0 3px 10px;
+  margin: 0 5px 10px;
+  letter-spacing: 1px;
+}
+main .flex p:nth-child(3) {
+  font-weight: bold;
+}
+main .flex p:nth-child(4) {
+  font-weight: bold;
 }
 
 .article1 .p {
